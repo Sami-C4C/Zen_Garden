@@ -18,11 +18,11 @@ Header-Background - heruntergeladen von https://cdn.freecodecamp.org/curriculum/
 
 ### Texte
 
-Texte stammen von http://ccszengarden.com
+Texte stammen von https://www.csszengarden.com/
 
 ### Code
 
-HTML-Code stammt von http://ccszengarden.com
+HTML-Code stammt von https://www.csszengarden.com/
 
 Animation stammt von: https://codepen.io/jdfd/pen/eVodJz
 https://codepen.io/uiswarup/pen/RBByzW
