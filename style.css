@@ -1,0 +1,407 @@
+/*
+  web fonts from Google:
+  Julius Sans One – https://fonts.google.com/specimen/Julius+Sans+One?query=julius
+  Libre Baskerville – https://fonts.google.com/specimen/Libre+Baskerville?query=baskerville
+ */
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+
+
+
+
+
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fddfce;
+}
+
+body {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 90%;
+    line-height: 1.6;
+    margin: 0 auto;
+
+
+}
+
+header {
+    background: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    height: 230px;
+    padding: 20px 0 70px 0;
+    background-size: auto, auto, auto, cover;
+    text-align: center;
+    border-radius: 20px;
+    border: 8px solid;
+    animation: borderAnimation 4s linear infinite;
+
+}
+
+#css-zen-garden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.page-wrapper {
+    /* position: relative;*/
+    margin: 0 20%;
+    padding: 20px;
+    /* padding-right: 35%;*/
+    max-width: 1200px;
+
+
+}
+
+
+
+
+.wrapper {
+    width: auto;
+    background-color: #f5bb99;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.summary,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #e6722f;
+    border-left: 20px solid #ce6325;
+    border-radius: 20px;
+    background-color: #f5bb99;
+    padding: 10px;
+    margin: 30px 10px;
+
+}
+
+h1,
+h2 {
+    padding: 0 10%;
+    margin: 0;
+    color: #fcf6f6;
+    font-weight: bold;
+
+}
+
+h1 {
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-bottom: none;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 5.2em;
+    text-transform: uppercase;
+    margin: 50px;
+    animation: moveInLeft 4s ease-out infinite;
+}
+
+h2 {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border-top: none;
+    color: #fff;
+    font-size: 2.6em;
+    font-style: italic;
+    animation: moveInRight 4s ease-out infinite;
+}
+
+h3 {
+    background-color: #a46229;
+    border-radius: 5px;
+    padding: 10px;
+
+
+}
+
+ul li {
+    background-color: #f29766;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+
+
+
+a {
+    color: #b12020;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+a:hover,
+a:focus {
+    color: #fff;
+    text-decoration: underline;
+
+}
+
+abbr {
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.01em;
+}
+
+
+
+
+
+
+.sidebar {
+    position: absolute;
+    height: max-conent;
+    top: 43%;
+    right: 10px;
+    width: 15%;
+    background-color: #f5bb99;
+    border: 3px solid #e6722f;
+    border-left: 20px solid #ce6325;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 0.5em;
+}
+
+.sidebar a {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #5d5d5d;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5bb99;
+
+    margin: 30px;
+    padding: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+footer a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+footer a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #dedddd;
+    }
+
+    25% {
+        border-color: #f29766;
+    }
+
+    50% {
+        border-color: #a46229;
+    }
+
+    75% {
+        border-color: #f99b03;
+    }
+
+    100% {
+        border-color: #bc863b;
+    }
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    .page-wrapper {
+        margin: 0 10%;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .page-wrapper {
+        margin: 0 5%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .summary,
+    .preamble,
+    .explanation,
+    .participation,
+    .benefits,
+    .requirements {
+        margin: 20px 0;
+    }
+
+    footer a {
+        font-size: 1em;
+        margin: 0 5px;
+        padding: 5px 8px;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 85%;
+    }
+
+    .page-wrapper {
+        margin: 0 2%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin: 30px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        padding-bottom: 20px;
+    }
+
+    .summary,
+    .preamble,
+    .explanation,
+    .participation,
+    .benefits,
+    .requirements {
+        margin: 15px 0;
+    }
+
+    footer a {
+        font-size: 0.8em;
+        margin: 0 3px;
+        padding: 4px 6px;
+    }
+}
